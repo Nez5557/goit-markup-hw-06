@@ -567,25 +567,57 @@
         </footer>
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-                <button type="button" class="close-button" data-modal-close>
-                    <svg class="modal-icon">
-                      <use href="./image-3/sprite.svg#Form-bg">
-                        <!-- <form class="js-speaker-form">
-                            <label for="name">Имя</label>
-                            <input type="text" name="name" id="name">
-
-                            <label for="tel">Телефон</label>
-                            <input type="text" name="tel" id="tel">
-
-                            <label for="mail">Почта</label>
-                            <input type="email" name="mail" id="mail">
-
-                            <button type="submit">Оставить заявку</button>
-                        </form> -->
-                     </use>
-                    </svg>
-                    <img src="./images-3/close-black-18dp.svg" alt="close">
-                </button>
+                <form action="" class="form">
+                    <div class="name-form" style="text-align: center;">Оставьте свои данные, мы вам перезвоним</div>
+                    <label for="name" class="form-name">
+                        <span class="form-label">Имя</span>
+                        <input 
+                          class="form-input"
+                          type="name"  
+                          id="name" 
+                          placeholder=" "
+                        />
+                        <a href="" class="icon-form"></a> 
+                    </label>
+                    <label for="tel" class="form-tel">
+                        <span class="form-label">Телефон</span>
+                        <input 
+                          class="form-input"
+                          type="tel"  
+                          id="tel" 
+                          placeholder=" "
+                        />
+                        <a href="" class="icon-form"></a> 
+                    </label>
+                    <label for="email" class="form-email">
+                        <span class="form-label">Почта</span>
+                        <input 
+                          class="form-input"
+                          type="email"  
+                          id="email" 
+                          placeholder=" "
+                        />
+                        <a href="" class="icon-form"></a>
+                    </label>
+                    <span class="form-label">Комментарий</span>
+                    <textarea
+                        class="form-input"
+                        type="comment"  
+                        id="comment"
+                        cols="20"
+                        rows="5"
+                        placeholder="Введите текст"></textarea>
+                <div class="document">
+                    <input type="checkbox" name="checkbox" id="checkbox">
+                    <label for="contract" class="consent">Соглашаюсь с рассылкой и принимаю
+                        <a href="#" class="contract">Условия договора</a>
+                    </label>
+                </div>
+                    <button type="submit" class="button-form">Отправить</button>
+                    <button type="button" class="close-button" data-modal-close>
+                        <img src="./images-3/close-black-18dp.svg" alt="close">
+                    </button>
+                </form>
             </div>
         </div>
       <script src="./js/modal.js"></script>
