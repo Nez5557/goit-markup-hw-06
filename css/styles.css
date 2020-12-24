@@ -8,7 +8,7 @@
 /* Цвет фона подвала #2F303A */
 
 :root {
-    --primary-text-color: #757575;
+    --primary-text-color: ;
     --title-text-color: #212121;
     --accent-color: #2196f3;
     --white-color: #fff;
@@ -554,6 +554,7 @@ nav {
     transform: translate(-50%, -50%) scale(1);
     width: 528px;
     height: 581px;
+    padding: 40px;
     background-color: var(--white-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -563,41 +564,22 @@ nav {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.checkboxes {
-    display: flex;
-}
-
 .name-form {
     position: relative;
     font-family: "Roboto", sans-serif;
+    color: var(--title-text-color);
     font-weight: 700;
     font-size: 20px;
     line-height: 1.2;
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-top: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     letter-spacing: 0.03em;
 }
-
-/* .container-form {
-    position: absolute;
-    width: 448px;
-    height: 342px;
-    align-items: center;
-    text-align: center;
-    justify-items: center;
-    margin-left: 40px;
-    margin-right: 40px;
-} */
 
 .form-label {
     color: var(--primary-text-color);
     text-align: left;
     top: 0;
     left: 0;
-    margin-left: 40px;
-    /* transform: translateX(120%); */
     transition: transform 250ms linear;
 }
 
@@ -608,32 +590,75 @@ nav {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em;
-    width: 85%;
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-bottom: 10px;
+    width: 100%;
+    margin-bottom: 8px;
+    margin-top: 2px;
     padding: 12px 16px;
     font: inherit;
     border-radius: 4px;
-    border: var(--primary-text-color);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    background-color: rgb(255, 255, 255), rgb(59, 59, 59);
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    /* box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2); */
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* .form-input:placeholder-shown {
+    border-color: var(--accent-color);
+  }
+  .form-input:not(:placeholder-shown) {
+    border-color: var(--primary-text-color);
+  } */
+
+/* .icon-form .form-input:not(:placeholder-shown),
+.icon-form .form-input:focus {
+    border: 1px solid var(--accent-color); */
+    /* border-color: var(--accent-color);
+} */
+
+
+.form-input:not(:placeholder-shown):valid {
+    border-color: #757575;
+}
+.form-input:not(:placeholder-shown):invalid {
+    border-color: #2196f3;;
 }
 
 .icon-form {
     position: absolute;
+    color: var(--title-text-color);
     top: 50%;
-    left: 10px;
-    /* transform: translateY(-50%); */
-    display: inline-block;
+    left: 55px;
+    width: 18px;
+    height: 18px;
+}
+
+.icon-name {
+    transform: translateY(-1000%);
+}
+
+.icon-tel-form {
+    transform: translateY(-600%);
+}
+
+.icon-email-form {
+    transform: translateY(-195%);
 }
 
 .document {
-    margin-left: 53px;
     margin-top: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
+/* .checkbox {
+    display: flex;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    position: absolute;
+} */
+
 .consent {
+    display: flex;
     color: var(--primary-text-color);
     font-family: "Roboto", sans-serif;
     font-style: normal;
@@ -642,31 +667,52 @@ nav {
     line-height: 1.71;
     letter-spacing: 0.03em;
     text-decoration: none;
+} 
+
+.consent::before {
+    content: "";
+    display: inline-block;
+    margin-right: 8px;
+    width: 16px;
+    height: 15px;
+    background-image: url(../images-4/Vector.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: translateY(20%);
 }
 
 .contract {
-    display: inline;
+    display: flex;
     text-align: center;
     justify-content: center;
     color: var(--accent-color);
     text-decoration-line: underline;
 }
+.contract a {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+.checkbox:checked + .consent::before {
+    background-color: var(--accent-color);
+    background-origin: border-box;
+    background-image: url(../images-4/icon\ check.svg);
+}
 
 .button-form {
-    display: block;
+    display: flex;
     font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.86;
     align-items: center;
-    text-align: center;
     justify-content: center;
     letter-spacing: 0.06em;
     width: 200px;
-    height: 50px;
-    margin-left: 164px;
-    margin-bottom: 40px;
+    padding: 10px 28px;
+    margin-left: 125px;
     color: var(--white-color);
     background: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -686,6 +732,11 @@ nav {
     background-color: var(--white-color);
     border: 1px solid rgba(0, 0, 0, 0.1);
     cursor: pointer;
+}
+
+.icon-close:hover,
+.icon-close:focus {
+    fill: var(--accent-color);
 }
 
 /* Портфолио */
@@ -784,15 +835,6 @@ button {
     position: relative;
     overflow: hidden;
 }
-
-/* .cards-overlay {
-    position: absolute;
-    padding: 63px 24px;
-    width: 100%;
-    height: 100%;
-    background: rgba(33, 150, 243, 0.9);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-} */
 
 .image-portfolio {
     width: 370px;

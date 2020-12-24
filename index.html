@@ -563,6 +563,12 @@
                         </li>
                     </ul>
                 </div>
+                <form class="footer-form">
+                    <p class="footer-form-title">
+                        Подпишись на рассылку
+                    </p>
+                    <div class="outlook-form"></div>
+                </form>
             </div>
         </footer>
         <div class="backdrop is-hidden" data-modal>
@@ -577,7 +583,14 @@
                           id="name" 
                           placeholder=" "
                         />
-                        <a href="" class="icon-form"></a> 
+                        <a href=""class="icon-form">
+                            <svg
+                                width="18px" height="18px" class="icon-name">
+                                    <use
+                                        href="./images-4/sprite-6.svg#icon-person-black-18dp-1">
+                                    </use>
+                            </svg>
+                        </a>
                     </label>
                     <label for="tel" class="form-tel">
                         <span class="form-label">Телефон</span>
@@ -587,7 +600,14 @@
                           id="tel" 
                           placeholder=" "
                         />
-                        <a href="" class="icon-form"></a> 
+                        <a href="" class="icon-form">
+                            <svg
+                                width="18px" height="18px" class="icon-tel-form">
+                                    <use
+                                        href="./images-4/sprite-6.svg#icon-phone-black-18dp-1">
+                                    </use>
+                            </svg>
+                        </a> 
                     </label>
                     <label for="email" class="form-email">
                         <span class="form-label">Почта</span>
@@ -597,25 +617,37 @@
                           id="email" 
                           placeholder=" "
                         />
-                        <a href="" class="icon-form"></a>
+                        <a href="" class="icon-form">
+                            <svg
+                                width="18px" height="18px" class="icon-email-form">
+                                    <use
+                                        href="./images-4/sprite-6.svg#icon-email-black-18dp-1">
+                                    </use>
+                            </svg>
+                        </a>
                     </label>
                     <span class="form-label">Комментарий</span>
                     <textarea
                         class="form-input"
                         type="comment"  
                         id="comment"
-                        cols="20"
+                        cols="15"
                         rows="5"
                         placeholder="Введите текст"></textarea>
                 <div class="document">
-                    <input type="checkbox" name="checkbox" id="checkbox">
-                    <label for="contract" class="consent">Соглашаюсь с рассылкой и принимаю
-                        <a href="#" class="contract">Условия договора</a>
+                    <input type="checkbox" name="checkbox" value=" " id="check" class="checkbox">
+                    <label for="contract" class="consent">Соглашаюсь с рассылкой и принимаю  
+                        <a href="#" class="contract"> Условия договора</a>
                     </label>
                 </div>
-                    <button type="submit" class="button-form">Отправить</button>
+                    <button class="button-form" type="submit">Отправить</button>
                     <button type="button" class="close-button" data-modal-close>
-                        <img src="./images-3/close-black-18dp.svg" alt="close">
+                        <svg
+                            width="18px" height="18px" class="icon-close">
+                            <use
+                                href="./images-4/sprite-6.svg#icon-close-black-18dp-2-1">
+                            </use>
+                        </svg>
                     </button>
                 </form>
             </div>
