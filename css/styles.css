@@ -713,13 +713,13 @@ nav {
    
 } */
 
-.checkbox {
-    display: flex;
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
+/* .visually-hidden {
     position: absolute;
-} 
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}  */
 
 .consent {
     display: flex;
@@ -755,12 +755,13 @@ nav {
     color: var(--accent-color);
     text-decoration-line: underline;
 }
-.contract a {
+
+/* .contract a {
     color: var(--accent-color);
     text-decoration: underline;
-}
+} */
 
-.checkbox:checked + .consent::before {
+.visually-hidden:checked + .consent::before {
     background-color: var(--accent-color);
     background-origin: border-box;
     background-image: url(../images-4/icon\ check.svg);
