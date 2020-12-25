@@ -636,13 +636,8 @@ nav {
 .form-input:focus-within {
     border: 2px solid var(--accent-color);
     outline: var(--accent-color);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-/* .icon-form:hover,
-.icon-form:focus {
-    fill: var(--accent-color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-} */
 
 .name-form {
     position: relative;
@@ -651,12 +646,17 @@ nav {
     font-weight: 700;
     font-size: 20px;
     line-height: 1.2;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
     letter-spacing: 0.03em;
 }
 
 .form-label {
     color: var(--primary-text-color);
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.18;
     text-align: left;
     top: 0;
     left: 0;
@@ -664,41 +664,19 @@ nav {
 }
 
 .form-input {
-    font-family: "Roboto", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.01em;
     width: 100%;
     margin-bottom: 8px;
     margin-top: 2px;
-    padding: 12px 16px;
-    padding-left: 40px;
-    font: inherit;
+    padding: 12px 40px 16px;
     border-radius: 4px;
     background-color: rgb(170, 83, 83), rgb(59, 59, 59);
     border: 1px solid rgba(33, 33, 33, 0.2);
-    /* box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2); */
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
-
-/* .icon-form {
-    position: absolute;
-    color: var(--title-text-color);
-    top: 50%;
-    left: 55px;
-    width: 18px;
-    height: 18px;
-    fill: currentColor;
-} */
-
 .icon-name {
-    transform: translateY(-1000%);
+    transform: translateY(-1010%);
     position: absolute;
-    color: var(--title-text-color);
     top: 50%;
     left: 55px;
     width: 18px;
@@ -707,9 +685,8 @@ nav {
 }
 
 .icon-tel-form {
-    transform: translateY(-600%);
+    transform: translateY(-590%);
     position: absolute;
-    color: var(--title-text-color);
     top: 50%;
     left: 55px;
     width: 18px;
@@ -718,9 +695,8 @@ nav {
 }
 
 .icon-email-form {
-    transform: translateY(-195%);
+    transform: translateY(-165%);
     position: absolute;
-    color: var(--title-text-color);
     top: 50%;
     left: 55px;
     width: 18px;
@@ -732,10 +708,12 @@ nav {
 .form-tel:focus-within,
 .form-email:focus-within {
     color: var(--accent-color);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .document {
     display: block;
+    text-align: center;
 }
 
 .checkbox {
@@ -751,13 +729,8 @@ nav {
     display: inline-block;
     color: var(--primary-text-color);
     font-family: "Roboto", sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    margin-top: 10px;
-    margin-bottom: 15px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
     text-decoration: none;
 } 
 
@@ -770,8 +743,7 @@ nav {
     background-image: url(../images-4/Vector.svg);
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
-    transform: translateY(20%);
+    background-position: center; 
 }
 
 .contract {
@@ -794,7 +766,6 @@ nav {
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
-    line-height: 1.86;
     align-items: center;
     justify-content: center;
     letter-spacing: 0.06em;
@@ -825,7 +796,7 @@ nav {
 .icon-close:hover,
 .icon-close:focus {
     fill: var(--accent-color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Портфолио */
