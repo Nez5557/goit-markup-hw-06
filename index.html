@@ -568,7 +568,7 @@
                         Подпишись на рассылку
                     </p>
                     <div class="outlook-form">
-                        <input type="e-mail" name="e-mail" id="e-mail"
+                        <input type="email" name="e-mail" id="e-mail"
                         placeholder="E-mail">
                         <button type="submit" class="footer-button">Подписаться
                             <svg width="24px" height="24px" class="footer-form-icon">
@@ -583,15 +583,15 @@
         </footer>
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-                <form action="" class="form" autocomplete="on">
+                <form action="#" class="form" autocomplete="on">
                     <div class="name-form" style="text-align: center;">Оставьте свои данные, мы вам перезвоним</div>
                     <label for="name" class="form-name">
                         <span class="form-label">Имя</span>
                         <input 
-                          class="form-input"
-                          type="name"  
-                          id="name" 
-                          placeholder=" "
+                            class="form-input"
+                            type="text"  
+                            id="name" 
+                            placeholder=" "
                         />
                             <svg
                                 width="18px" height="18px" class="icon-name">
@@ -603,10 +603,10 @@
                     <label for="tel" class="form-tel">
                         <span class="form-label">Телефон</span>
                         <input 
-                          class="form-input"
-                          type="tel"  
-                          id="tel" 
-                          placeholder=" "
+                            class="form-input"
+                            type="tel"  
+                            id="tel" 
+                            placeholder=" "
                         />
                             <svg
                                 width="18px" height="18px" class="icon-tel-form">
@@ -618,10 +618,10 @@
                     <label for="email" class="form-email">
                         <span class="form-label">Почта</span>
                         <input 
-                          class="form-input"
-                          type="email"  
-                          id="email" 
-                          placeholder=" "
+                            class="form-input"
+                            type="email"  
+                            id="email" 
+                            placeholder=" "
                         />
                             <svg
                                 width="18px" height="18px" class="icon-email-form">
@@ -632,8 +632,7 @@
                     </label>
                     <span class="form-label">Комментарий</span>
                     <textarea
-                        class="form-input"
-                        type="comment"  
+                        class="form-input" 
                         id="comment"
                         cols="15"
                         rows="5"
@@ -641,9 +640,9 @@
                 <div class="document">
                     <label class="consent">
                         <input type="checkbox" name="checkbox" value=" " id="check" class="checkbox">
-                    <p class="text-form">Соглашаюсь с рассылкой и принимаю
+                    <b class="text-form">Соглашаюсь с рассылкой и принимаю
                         <a href="#" class="contract">Условия договора</a>
-                    </p>
+                    </b>
                     </label>
                 </div>
                     <button class="button-form" type="submit">Отправить</button>
@@ -658,6 +657,6 @@
                 </form>
             </div>
         </div>
-      <script src="./js/modal.js"></script>
+        <script src="./js/modal.js"></script>
     </body>
 </html>
