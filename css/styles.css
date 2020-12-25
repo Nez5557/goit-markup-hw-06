@@ -745,7 +745,7 @@ nav {
     text-decoration: none;
 } 
 
-.consent::before {
+.text-form::before {
     content: "";
     display: inline-block;
     margin-right: 8px;
@@ -771,7 +771,7 @@ nav {
     text-decoration: underline;
 } */
 
-.checkbox:checked + .consent::before {
+.checkbox:checked + .text-form::before {
     background-color: var(--accent-color);
     background-origin: border-box;
     background-image: url(../images-4/icon\ check.svg);
