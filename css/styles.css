@@ -709,18 +709,17 @@ nav {
     transform: translateY(-195%);
 }
 
-.document {
-    margin-top: 10px;
-    margin-bottom: 15px;
-}
+/* .document {
+   
+} */
 
-/* .checkbox {
+.checkbox {
     display: flex;
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
     position: absolute;
-} */
+} 
 
 .consent {
     display: flex;
@@ -729,6 +728,8 @@ nav {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 15px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     text-decoration: none;
@@ -748,7 +749,7 @@ nav {
 }
 
 .contract {
-    display: flex;
+    display: block;
     text-align: center;
     justify-content: center;
     color: var(--accent-color);
