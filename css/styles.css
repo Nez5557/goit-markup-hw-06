@@ -62,7 +62,7 @@ nav {
     margin-right: auto;
     overflow: hidden;
     justify-content: space-between;
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 .page-header {
     display: flex;
