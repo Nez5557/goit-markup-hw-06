@@ -738,10 +738,11 @@ opacity: 1;
 .text-form::before {
     content: "";
     display: inline-block;
-    margin-right: 10px;
+    margin-right: 8px;
     width: 16px;
     height: 15px;
     margin-top: 20px;
+    font-size: 14px;
     background-image: url(../images-4/Vector.svg);
     background-size: contain;
     background-repeat: no-repeat;
